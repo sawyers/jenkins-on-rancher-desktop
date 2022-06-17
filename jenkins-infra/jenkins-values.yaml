@@ -4,8 +4,21 @@ controller:
     apiVersion: networking.k8s.io/v1
     hostName: jenkins.rancher.localhost
   installPlugins:
-  - kubernetes:latest
-  - workflow-aggregator:latest
-  - git:latest
-  - configuration-as-code:latest
+  - aws-credentials:latest
+  - bitbucket:latest
   - blueocean:latest
+  - branch-api:latest
+  - cloudbees-bitbucket-branch-source:latest
+  - cloudbees-folder:latest
+  - configuration-as-code:latest
+  - credentials-binding:latest
+  - credentials:latest
+  - ec2:latest
+  - envinject:latest
+  - git:latest
+  - kubernetes:latest
+  - pipeline-model-definition:latest
+  - rebuild:latest
+  - workflow-aggregator:latest
+  - workflow-cps:latest
+  - workflow-multibranch:latest
