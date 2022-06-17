@@ -18,3 +18,5 @@ kubectl --namespace jenkins \
 
 ## Create Cluster Role
 kubectl apply -f jenkins-infra/clusterrole.yaml
+
+## Credentials can be added from 1password
