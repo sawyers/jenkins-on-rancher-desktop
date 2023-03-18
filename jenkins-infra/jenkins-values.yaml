@@ -22,3 +22,24 @@ controller:
   - workflow-aggregator:latest
   - workflow-cps:latest
   - workflow-multibranch:latest
+  configScripts:
+    user: |
+      jenkins:
+        securityRealm:
+          local:
+            allowsSignup: false
+            enableCaptcha: false
+            users:
+            - id: "msawyers"
+              name: "Michael Sawyers"
+              properties:
+                - "apiToken"
+                - favoriting:
+                  autofavoriteEnabled: true
+                - "favorite"
+                - "myView"
+                - preferredProvider:
+                    providerId: "default"
+                - "timezone"
+                - mailer:
+                  emailAddress: "magic175+jenkins@gmail.com"
